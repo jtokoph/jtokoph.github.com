@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        
+        <title>{% if page.title %}{{ page.title }} - {% endif %}Jason Tokoph</title>
+        <meta name="description" content="Personal site of Jason Tokoph">
+        <meta name="author" content="Jason Tokoph">
+        
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        
+        <link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'/>
+        <link rel="stylesheet" href="/css/master.css" type="text/css" media="screen"/>
+        
+        <script src="js/modernizr.custom.03220.js"></script>
+        
+    </head>
+    <body>
+        <div id="container">
+            <header class="clearfix">
+                <div class="left-col">
+                    <a href="/"><span class="hidden-narrow">Hi, I'm </span>Jason Tokoph!</a>
+                </div>
+                <div class="right-col">
+                    
+                </div>
+            </header>
+            <div id="main" role="main" class="clearfix">
+                <nav class="right-col" id="main-nav">
+                    <ul>
+                        <li><a href="/">home</a></li>
+                        <li><a href="/archive">archive</a></li>
+                        <li><a href="/contact">contact</a></li>
+                        <li><a href="/about">about<span class="hidden-narrow"> me</span></a></li>
+                    </ul>
+                </nav>
+                <div class="left-col">
+                    {{ content }}
+                </div>
+            </div>
+            <footer>
+                <h2>Made by me, Jason Tokoph.</h2>
+            </footer>
+        </div>
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+        
+        
+        <script>
+          window._gaq = [['_setAccount','UA251624781'],['_trackPageview'],['_trackPageLoadTime']];
+          Modernizr.load({
+            load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+          });
+        </script>
+        <!--[if lt IE 7 ]>
+          <script defer src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+          <script defer>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+        <![endif]-->
+    </body>
+</html>

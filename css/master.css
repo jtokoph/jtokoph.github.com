@@ -279,6 +279,11 @@ nav > ul > li {
     color: #54a849;
 }
 
+#container > header a {
+    color: #555;
+    text-decoration: none;
+}
+
 .left-col {
     width:78%;
     float:left;

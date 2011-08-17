@@ -1,86 +1,11 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        
-        <title>Jason Tokoph</title>
-        <meta name="description" content="Personal site of Jason Tokoph">
-        <meta name="author" content="Jason Tokoph">
-        
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        
-        <link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'/>
-        <link rel="stylesheet" href="/css/master.css" type="text/css" media="screen"/>
-        
-        <script src="js/modernizr.custom.03220.js"></script>
-        
-    </head>
-    <body>
-        <div id="container">
-            <header class="clearfix">
-                <div class="left-col">
-                    <span class="hidden-narrow">Hi, I'm </span>Jason Tokoph!
-                </div>
-                <div class="right-col">
-                    
-                </div>
-            </header>
-            <div id="main" role="main" class="clearfix">
-                <nav class="right-col" id="main-nav">
-                    <ul>
-                        <li><a href="/">home</a></li>
-                        <li><a href="/archive">archive</a></li>
-                        <li><a href="/contact">contact</a></li>
-                        <li><a href="/about-me">about<span class="hidden-narrow"> me</span></a></li>
-                    </ul>
-                </nav>
-                <div class="left-col">
-                    <article>
-                        <header>
-                            <h1><a href="/blog-post-name-here">Blog Post Name Here</a></h1>
-                            <h2>Monday, August 15, 2011</h2>
-                        </header>
-                        <p>
-                            This is the actual post in hipster ipsum. Gluten-free etsy williamsburg, stumptown portland craft beer next level art party brunch tofu chambray. Twee jean shorts locavore, whatever marfa skateboard chambray williamsburg biodiesel butcher hoodie letterpress homo seitan carles. Sartorial letterpress helvetica twee, four loko mustache stumptown pitchfork. Mustache blog iphone mlkshk ethical, cosby sweater before they sold out trust fund. Austin master cleanse dreamcatcher, etsy ethical 3 wolf moon locavore retro fap gentrify DIY. Dreamcatcher vinyl skateboard, tattooed terry richardson brooklyn thundercats put a bird on it pitchfork farm-to-table. Twee american apparel cred, tattooed readymade synth scenester artisan fap mustache DIY banksy.
-                        </p>
-                        <p>
-                            Fanny pack cosby sweater brunch trust fund aesthetic banksy. Synth brooklyn 8-bit, lomo cliche aesthetic retro iphone. Lo-fi farm-to-table portland artisan carles put a bird on it, sustainable wayfarers brooklyn jean shorts. Cosby sweater fap craft beer, sustainable mixtape tofu artisan organic. Squid tumblr lomo jean shorts, art party viral gluten-free. Tofu 3 wolf moon photo booth homo put a bird on it, retro mustache DIY aesthetic you probably haven't heard of them gentrify wes anderson bicycle rights sustainable. Pitchfork single-origin coffee quinoa mcsweeney's, raw denim seitan +1 locavore tofu.
-                        </p>
-                    </article>
-                    <article>
-                        <header>
-                            <h1><a href="/blog-post-name-here">Blog Post Name Here</a></h1>
-                            <h2>Monday, August 15, 2011</h2>
-                        </header>
-                        <p>
-                            This is the actual post in hipster ipsum. Gluten-free etsy williamsburg, stumptown portland craft beer next level art party brunch tofu chambray. Twee jean shorts locavore, whatever marfa skateboard chambray williamsburg biodiesel butcher hoodie letterpress homo seitan carles. Sartorial letterpress helvetica twee, four loko mustache stumptown pitchfork. Mustache blog iphone mlkshk ethical, cosby sweater before they sold out trust fund. Austin master cleanse dreamcatcher, etsy ethical 3 wolf moon locavore retro fap gentrify DIY. Dreamcatcher vinyl skateboard, tattooed terry richardson brooklyn thundercats put a bird on it pitchfork farm-to-table. Twee american apparel cred, tattooed readymade synth scenester artisan fap mustache DIY banksy.
-                        </p>
-                        <p>
-                            Fanny pack cosby sweater brunch trust fund aesthetic banksy. Synth brooklyn 8-bit, lomo cliche aesthetic retro iphone. Lo-fi farm-to-table portland artisan carles put a bird on it, sustainable wayfarers brooklyn jean shorts. Cosby sweater fap craft beer, sustainable mixtape tofu artisan organic. Squid tumblr lomo jean shorts, art party viral gluten-free. Tofu 3 wolf moon photo booth homo put a bird on it, retro mustache DIY aesthetic you probably haven't heard of them gentrify wes anderson bicycle rights sustainable. Pitchfork single-origin coffee quinoa mcsweeney's, raw denim seitan +1 locavore tofu.
-                        </p>
-                    </article>
-                </div>
-            </div>
-            <footer>
-                <h2>Made by me, Jason Tokoph.</h2>
-            </footer>
-        </div>
-        
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
-        
-        
-        <script>
-          window._gaq = [['_setAccount','UA251624781'],['_trackPageview'],['_trackPageLoadTime']];
-          Modernizr.load({
-            load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
-          });
-        </script>
-        <!--[if lt IE 7 ]>
-          <script defer src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-          <script defer>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-        <![endif]-->
-    </body>
-</html>
+---
+layout: default
+---
+{% assign first_post = site.posts.first %}
+<article>
+    <header>
+        <h1><a href="{{ first_post.url }}">{{ first_post.title }}</a></h1>
+        <h2>{{ first_post.date |  | date: "%A, %B %d, %Y" }}</h2>
+    </header>
+    {{ first_post.content }}
+</article>

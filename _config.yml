@@ -1,0 +1,7 @@
+auto: true
+pygments: true
+server: true
+permalink:  pretty
+exclude:
+- README.md
+- CNAME
