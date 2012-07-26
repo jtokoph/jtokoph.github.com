@@ -1,5 +1,0 @@
----
-layout: post
-title: Setting Up Jekyll
----
-This is the first test post.
