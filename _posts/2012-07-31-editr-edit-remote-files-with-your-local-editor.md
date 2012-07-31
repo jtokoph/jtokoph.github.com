@@ -21,11 +21,11 @@ Last year, Allan Odgaard <a href="http://blog.macromates.com/2011/textmate-2-0-a
 
 1. The server would work with TextMate, Sublime Text 2 and Chocolat
 
-    _I hated that rmate only worked with TextMate 2, so how could I deny people that used other editors. (Even the OS X default editor, TextEdit, works.)_
+    _I hated that rmate only worked with TextMate 2, so how could I deny people that used other editors. (It even works with the OS X default editor, TextEdit.)_
 
 2. The client had to run without installing extra runtimes (ruby, node, python)
 
-    _TM2's rmate included a client script written in ruby. While this works for a lot of people, none of the machines I work with on a daily basis had ruby installed._
+    _TM2's rmate included a client script written in ruby. While this works for a lot of people, none of the machines I work with on a daily basis have ruby installed._
 
 
 
