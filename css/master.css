@@ -228,16 +228,16 @@ body {
     padding:0 3% 0 3%;
 }
 
-h1, h2 {
+h1, h2, h3, h4 {
     font-weight: normal;
     margin:0 0 2px 0;
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 30px;
 }
 
-h2 {
+h4 {
     font-size: 16px;
     color: #696969;
 }
@@ -289,7 +289,7 @@ nav > ul > li {
 }
 
 .left-col {
-    width:78%;
+    width:76%;
     float:left;
 }
 
@@ -374,17 +374,22 @@ nav > ul > li {
   
   #main-nav ul li a {
       display:block;
-      padding: 10px 0 10px 0;
+      margin: 5px 0 5px 0;
       height:100%;
       width:100%;
   }
   
   h1 {
       font-size: 20px;
+      font-weight: bold;
   }
   
-  h2 {
+  h4 {
       font-size: 16px;
+  }
+  
+  body {
+      font-size: 14px;
   }
   
   article {

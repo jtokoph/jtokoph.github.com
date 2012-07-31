@@ -5,7 +5,8 @@ layout: default
 <article>
     <header>
         <h1><a href="{{ first_post.url }}">{{ first_post.title }}</a></h1>
-        <h2>{{ first_post.date |  | date: "%A, %B %d, %Y" }}</h2>
+        <h4>{{ first_post.date |  | date: "%A, %B %d, %Y" }}{% if first_post.enable_comments %} | <a href="{{ first_post.url }}#disqus_thread"></a>{% endif %}</h4>
     </header>
     {{ first_post.content }}
+    
 </article>
