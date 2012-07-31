@@ -10,7 +10,7 @@ I'll start off by saying that I've never written a blog post before, but I wante
 
 editr allows you to edit remote files with [TextMate](http://macromates.com/), [Sublime Text 2](http://www.sublimetext.com/2), [Chocolat](http://chocolatapp.com/) and more!
 
-Once installed, you'll be able to use `editr` like you would `mate` or `subl` on the command line. Only now, your remote file will be opened in your local mac editor.
+Once installed, you'll be able to use `editr` like you would `mate` or `subl` on the command line. Only now, your remote file will be opened in your local mac editor. [Check out the project on GitHub](https://github.com/jtokoph/editr) and give it a try.
 
 
 ### The Reasoning
