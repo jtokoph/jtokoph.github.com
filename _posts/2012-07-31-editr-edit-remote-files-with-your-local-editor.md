@@ -12,6 +12,10 @@ editr allows you to edit remote files with [TextMate](http://macromates.com/), [
 
 Once installed, you'll be able to use `editr` like you would `mate` or `subl` on the command line. Only now, your remote file will be opened in your local mac editor. [Check out the project on GitHub](https://github.com/jtokoph/editr) and give it a try.
 
+{% highlight bash %}
+# Running this on a remote machine will open the editor on your mac
+$ editr myfile.txt
+{% endhighlight %}
 
 ### The Reasoning
 
